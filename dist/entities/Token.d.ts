@@ -8,7 +8,7 @@ export declare class Token extends AbstractCurrency {
     readonly address: string;
     readonly isNative: false;
     readonly isToken: true;
-    constructor(chainId: number, address: string, decimals: number, symbol?: string, name?: string);
+    constructor(chainId: number, address: string, decimals: number, symbol: string, name: string);
     /**
      * Returns true if the two tokens are equivalent, i.e. have the same chainId and address.
      * @param other other token to compare
