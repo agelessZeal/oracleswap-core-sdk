@@ -23,11 +23,11 @@ export declare abstract class AbstractCurrency {
     /**
      * The symbol of the currency, i.e. a short textual non-unique identifier
      */
-    readonly symbol: string;
+    readonly symbol?: string;
     /**
      * The name of the currency, i.e. a descriptive textual non-unique identifier
      */
-    readonly name: string;
+    readonly name?: string;
     /**
      * Constructs an instance of the base class `BaseCurrency`.
      * @param chainId the chain ID on which this currency resides
@@ -35,7 +35,7 @@ export declare abstract class AbstractCurrency {
      * @param symbol symbol of the currency
      * @param name of the currency
      */
-    protected constructor(chainId: number, decimals: number, symbol: string, name: string);
+    protected constructor(chainId: number, decimals: number, symbol?: string, name?: string);
     /**
      * Returns whether this currency is functionally equivalent to the other currency
      * @param other the other currency
